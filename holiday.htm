@@ -5,6 +5,18 @@
 	<title>welcome to my web</title>
 
 <style>
+	body {
+text-align: center;
+padding: 0px;
+margin: 0px;
+width: 100%;
+}
+div {
+margin: 20px auto;
+border: red 2px solid;
+max-width: 950px;
+width: expression(document.body.clientWidth > 950? "950px": "auto" );
+}
 	#top{
 	position:fixed;
 	top:0px;
