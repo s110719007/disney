@@ -1,15 +1,18 @@
 
 <head>
-<link href="css/news.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<title>welcome to my web</title>
 <style>
+	body{
+	margin:0;
+	overflow-x:hidden;
+	}
 	#top{
 	position:fixed;
 	top:0px;
 	width: 100%;
- 	height: 455px;
+ 	height: auto;
 	z-index:0;
 	}
 	#lefticon{
@@ -26,7 +29,7 @@
 	background: -moz-linear-gradient(right,#CCBBFF,#9955FF);
 	background: linear-gradient(to right,#CCBBFF,#9955FF);
 	z-index:-100;
-	width:105%;
+	width:100%;
 	height:470px;
 	}
 	#block3
@@ -36,15 +39,15 @@
 	background: -moz-linear-gradient(right,#CCBBFF,#9955FF);
 	background: linear-gradient(to right,#CCBBFF,#9955FF);
 	position:absolute;
+	height:385%;
 	width:100%;
-	height:2200px;
 	z-index:1;
 	}
 	.block3-1
 	{
 	top:10px;
 	width:70%;
-	height:500px;
+	height:100%;
 	position:absolute;
 	right:15%;
 	background-color:#E8CCFF;
@@ -55,7 +58,17 @@
 	width:50%;
 	height:300px;
 	} 	
-	.block3-2-1,.block3-2-2,.block3-2-3,.block3-2-4
+	.block3-2-1
+	{
+	position:relative;
+	top:300px;
+	left:10%;
+	width:80%;
+	height:1000px;
+	background-color:#E8CCFF;
+	z-index:1;
+	}
+	.block3-2-2,.block3-2-3,.block3-2-4
 	{
 	position:relative;
 	top:300px;
@@ -112,10 +125,10 @@
 	@media only screen and (max-width: 1500px) {
 		.block3-1
 		{
-		width:70%;
-		height:300px;
+		width:80%;
+		height:auto;
 		position:absolute;
-		right:15%;
+		right:10%;
 		background-color:#E8CCFF;
 		color:#FFFFFF;
 		}
@@ -127,7 +140,6 @@
 		background: linear-gradient(to right,#CCBBFF,#9955FF);
 		position:absolute;
 		width:100%;
-		height:2350px;
 		z-index:1;
 		}
 		.blockimg
@@ -143,7 +155,7 @@
 		{
 		position:relative;
 		top:500px;
-		left:11%;
+		left:10%;
 		width:80%;
 		height:300px;
 		background-color:#E8CCFF;
@@ -201,7 +213,7 @@
 }
 .footer{
     display: flex;
-    width: 100%;
+    width: 105%;
     height: 100px; 
     justify-content: center;
     margin-top: 0px;
@@ -245,7 +257,7 @@
 			<h1 style="font-family: fantasy; color:#550088;">Disney Rules&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
 			<h3 style="font-family: Courier New;color:#550088;">
 			Welcome to Disney Village and the Disney Parks Esplanade!<br>
-			Please comply with the following rules and regulations to ensure your safety and well-being:<br>Disney Village is a private property. In order to maintain a safe and &nbsp;&nbsp;&nbsp;&nbsp;
+			Please comply with the following rules and regulations to ensure your safety and well-being:<br>Disney Village is a private property. In order to maintain a safe and 
 			pleasant environment, access to Disney Village will only be granted to individuals who 
 			comply with the rules laid down in these regulations. Certain venues in Disney 
 			Village have their own additional regulations. Please familiarize yourself 
@@ -255,6 +267,7 @@
 			<img class="blockimg" style="float:left;" src="image/disney.png">	
 		</span>
 		</div>
+	
 	</div>
 
 	<div class="blankspace"></div>
@@ -293,8 +306,10 @@
 	Gorgeous Queen</h3>
 	</span>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/b038OArXRN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
 	</div>
-<footer class="footer">
+
+	<footer class="footer">
 	<p style="font-family: Courier New;>+12 3 45 67 89</p>
         <p style="font-family: Courier New;><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any questions about all available products or offers?<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please call our advisers at: +12 3 45 67 89<br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
