@@ -10,9 +10,15 @@ body{
     background-size: 100% auto;
     background-repeat:no-repeat;
 }
+	#background{
+	position:fixed;
+	width: 100%;
+ 	height: 100%;
+	z-index:0;
+	}
 	#head{
  	clear:both;
-	background-color:#CCCCFF;
+	background-color:#CCDDFF;
 	-webkit-box-shadow:0px 10px rgba(20%,20%,40%,0.5);
 	position:fixed;
 	width:100%;
@@ -33,17 +39,87 @@ body{
   height:40%;
 }
 	button{
-	color:#4400B3;
+	color:#007799;
 	font-size:30px;
-	background-color:#CCCCFF;
+	background-color:#CCDDFF;
 	border-style:none;
 	font-family:Trebuchet MS;
 	}
 	button:hover
 	{
-	color:#CC00CC;
+	color:#5599FF;
 	transition: 0.5s;
 	}
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.slider_container div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.slider_container div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.slider_container div:nth-child(4) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
 .bottom-container{
     display: flex;
     justify-content: space-between;
@@ -62,7 +138,7 @@ body{
 </style>
     </head>
 <body>
-    <body background="image/disneylandcur.jpg">
+   
 	<div id="head">
 	<center>
 	<button id="bt1" onclick="location.href='mystory.htm'" style="position:fixed; font-family:Impact; right:15%"}>Help</button >
@@ -72,6 +148,23 @@ body{
 	<button id="bt6" onclick="location.href='NEW.htm'" style="position:fixed; font-family:Impact; right:80%"}>Home</button >			
 	</div>
 	<img id="righticon" on<img id="righticon" onclick="location.href='login.htm'" src="image/65d6cfcb2bb5193d6d160157b34b2bd0.png"></img>    <div class="block3">
+<div class="slider_container">
+	<div>
+		<img id="background" src="image/471413-festival-du-roi-lion-et-de-la-jungle-a-disneyland-paris-photos-7.jpg">
+	</div>
+	<div>
+		<img id="background" src="image/new-princess-run-and-other-special-seasonal-offerings-announced-for-disneyland-paris.jpeg">
+	</div>
+	<div>
+		<img id="background" src="image/DLP-parade-xmas-with-Breakaway-logo-web.jpg">
+	</div>
+	<div>
+		<img id="background" src="image/Mickey_Minnie_4016810_r521-X23.jpg">
+	</div>
+	<div>
+		<img id="background" src="image/disneylandcur.jpg">
+	</div>
+</div>
 <span>            
 <br><br><br>
                 <p style="font-family:Impact; font-size:70px; color:#FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Disneyland</p>
