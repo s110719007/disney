@@ -5,10 +5,12 @@
 	<title>welcome to my web</title>
 
 <style>
+
 	body {
 	margin: 0;
-	}
+height:100vh;
 
+}
 	#top{
 	position:fixed;
 	top:0px;
@@ -29,7 +31,7 @@
 	}
 	button{
 	color:	#FFFFFF;
-	font-size:30px;
+	font-size:40px;
 	background-color:#880000;
 	border-style:none;
 	font-family:Trebuchet MS;
@@ -39,13 +41,20 @@
 	color:#FF8800;
 	transition: 0.5s;
 	}
-	#lefticon:hover{
+	#lefticon{
 	position:fixed;
-	top:70%;
-	width:150px;
-	height:150px;
+	width:9%;
+	height:auto;
+	bottom:70px;
 	z-index:2;
-	transition:0.5s;
+	}
+	#righticon{
+	position:fixed;
+	width:7%;
+	height:auto;
+	right:50px;
+	bottom:70px;
+	z-index:2;
 	}
 	#head{
  	clear:both;
@@ -63,7 +72,6 @@
 	height:1000px;
 	position:absolute;
 	right:15%;
-
 	color:#FFFFFF;
 	}
 
@@ -89,7 +97,7 @@
 	}
 	#block3
 	{
-	top:auto%;
+	top:auto;
 	background: -webkit-linear-gradient(#FF8888,#FF3333,#880000);
 	background: -o-linear-gradient(#FF8888,#FF3333,#880000);
 	background: -moz-linear-gradient(#FF8888,#FF3333,#880000);
@@ -225,6 +233,21 @@
 		z-index:1;
 		}
 	}
+	#lefticon:hover{
+	position:fixed;
+	width:12%;
+	height:auto;
+	z-index:2;
+	transition:0.5s;
+	}
+	#righticon:hover{
+	position:fixed;
+	width:10%;
+	height:auto;
+	bottom:10px;
+	z-index:2;
+	transition:0.5s;
+	}
 .bottom-container{
     display: flex;
     justify-content: space-between;
@@ -262,17 +285,19 @@
 <body>
 	<div id="head">
 	<center>
-	<button id="bt1" onclick="location.href='mystory.htm'" style="position:fixed; right:15%"}>Help</button >
-	<button id="bt2" onclick="location.href='ticket.htm'" style="position:fixed; right:35%"}>Tickets</button >
-	<button id="bt4" onclick="location.href='holiday.htm'" style="position:fixed; right:55%"}>Holiday</button >
-	<button id="bt5" onclick="location.href='news.htm'" style="position:absolute; right:75%"}>Introduction</button>
-			
+	<button id="bt1" onclick="location.href='mystory.htm'" style="position:fixed; font-family:Impact; right:15%"}>Help</button >
+	<button id="bt2" onclick="location.href='ticket.htm'" style="position:fixed; font-family:Impact; right:30%"}>Tickets</button >
+	<button id="bt4" onclick="location.href='holiday.htm'" style="position:fixed; font-family:Impact; right:46%"}>Holiday</button >
+	<button id="bt5" onclick="location.href='news.htm'" style="position:absolute; font-family:Impact; right:62%;"}>Introduction</button>
+	<button id="bt6" onclick="location.href='NEW.htm'" style="position:fixed; font-family:Impact; right:80%"}>Home</button >			
 	</div>
 	<div class="hover">
 		  <img id="top" class="blockimg" src="image/iaswh0132948fi.jpg" />
 		  <img id="top" class="blockimg" src="image/DLP-parade-xmas-with-Breakaway-logo-web11.jpg" />
 		</div>
-	<img id="lefticon" onclick="location.href='NEW.htm'" src="image/1106088.gif"></img>
+	<img id="lefticon" on<img id="lefticon" onclick="location.href='HOME.htm'" src="image/1106088.gif"></img>
+	<img id="righticon" on<img id="righticon" onclick="location.href='login.htm'" src="image/65d6cfcb2bb5193d6d160157b34b2bd0.png"></img>
+
 	<div class="space">
 	<div id="block3">
 		<div class="block3-1">
