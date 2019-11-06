@@ -1,27 +1,10 @@
-
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<title>welcome to my web</title>
 <style>
-
-
-
-
-.resize {
-width : auto;
-width : 200px;
-}
-
-.resize {
-height : auto;
-height : 200px;
-}
-
-
-
-
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {     display: block; }
 
 
 
@@ -155,8 +138,29 @@ height : 200px;
 	width:50%;
 	height:285px;
 	}
+#pagewrap {
+    width: 980px;
+    margin: 0 auto;
+}
+ 
+#header {
+    height: 160px;
+}
+ 
+#content {
+    width: 600px;
+    float: left;
+}
+ 
+#sidebar {
+    width: 280px;
+    float: right;
+}
+ 
+#footer {
+    clear: both;
+}
 	@media only screen and (max-width: 1500px) {
-
 		#img{
 		float: right;
 		width:40%;
@@ -194,7 +198,104 @@ height : 200px;
 		height:auto;
 		z-index:1;
 		}
+
+    #pagewrap {
+        width: 95%;
+    }
+ 
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+ 
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
 	}
+
+@media screen and (max-width: 650px) {
+ 		#img{
+		float: right;
+		width:40%;
+		height:auto;
+		}		
+		.block3-2-1
+		{
+		position:relative;
+		top:500px;
+		left:10%;
+		width:80%;
+		height:auto;
+		background-color:#E8CCFF;
+		z-index:1;
+		}
+		.block3-2-2
+		{
+		position:relative;
+		left:25%;
+		width:80%;
+		height:auto;
+		background-color:#E8CCFF;
+		z-index:1;
+		color:#660077;
+		}
+		#block3
+		{
+		top:400px;
+		background: -webkit-linear-gradient(left,#CCBBFF,#9955FF);
+		background: -o-linear-gradient(right,#CCBBFF,#9955FF);
+		background: -moz-linear-gradient(right,#CCBBFF,#9955FF);
+		background: linear-gradient(to right,#CCBBFF,#9955FF);
+		position:absolute;
+		width:100%;
+		height:auto;
+		z-index:1;
+		}
+    #header {
+        height: auto;
+    }
+ 
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+ 
+    #main-nav {
+        position: static;
+    }
+ 
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+ 
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+    }
+ 
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+ 
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+ 
+}
+
+
+
+
 .bottom-container{
     display: flex;
     justify-content: space-between;
@@ -227,7 +328,6 @@ height : 200px;
 	margin-left: 0px;
 	border-radius: 50px 50px 0px 0px / 25px 25px 0px 0px;
 }
-
 	</style>
 </head>
 <body>
@@ -237,15 +337,6 @@ height : 200px;
 	<button id="bt2" onclick="location.href='ticket.htm'" style="position:fixed; right:35%"}>Tickets</button >
 	<button id="bt4" onclick="location.href='holiday.htm'" style="position:fixed; right:55%"}>Holiday</button >
 	<button id="bt5" onclick="location.href='news.htm'" style="position:absolute; right:75%"}>Introduction</button>
-			
-
-
-<div class="outer">
-    <div class="inner">
-    </div>
-</div>
-
-
 
 
 	</div>
@@ -313,4 +404,36 @@ height : 200px;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© Disney • Pixar © & TM Lucasfilm Ltd. © MARVEL. All Rights Reserved</p>
     </footer>
 </div>
+
+
+
+
+<div id="pagewrap">
+<header id="header">
+<hgroup>
+<h1 id="site-logo">Demo</h1>
+<h2 id="site-description">Site Description</h2>
+</hgroup>
+<nav>
+<ul id="main-nav">
+<li><a href="#">Home</a></li>
+</ul>
+</nav>
+<form id="searchform">
+<input type="search">
+</form>
+</header>
+<div id="content">
+<article class="post"> blog post </article>
+</div>
+<aside id="sidebar">
+<section class="widget"> widget </section>
+</aside>
+<footer id="footer"> footer </footer>
+</div>
+
+
+			
+
+
 </body>	
