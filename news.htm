@@ -96,7 +96,7 @@
 	}
 	button{
 	color:	#FFFFFF;
-	font-size:40px;
+	font-size:200%;
 	background-color:#3A0088;
 	border-style:none;
 	font-family:Trebuchet MS;
@@ -108,6 +108,21 @@
 	}
 	
 	
+	.hover {position:relative;}
+
+	.hover img {
+	  position:absolute;
+	  -webkit-transition: opacity 1s ease-in-out;
+	  -moz-transition: opacity 1s ease-in-out;
+	  -o-transition: opacity 1s ease-in-out;
+	  transition: opacity 1s ease-in-out;
+	}
+
+
+	.hover img:nth-of-type(2):hover{
+	  opacity:0;
+	}
+
 	#lefticon:hover{
 	position:fixed;
 	top:70%;
@@ -292,7 +307,11 @@
 	</div>
 	<img id="lefticon" onclick="location.href='NEW.htm'" src="image/1106088.gif"></img>
 	<img id="righticon" on<img id="righticon" onclick="location.href='login.htm'" src="image/65d6cfcb2bb5193d6d160157b34b2bd0.png"></img>
-		<img id="top" src="image/jSlYdCPV12.jpg"></img>
+		
+	<div class="hover">
+			 <img id="top" src="image/09_2017_DCA.5101-1180x500.jpg">
+			 <img id="top" src="image/jSlYdCPV12.jpg">
+			</div>
 	<div class="blockspace"></div>
 	<div id="block3">
 		<div class="block3-1" style="height:auto; top:0%;">
