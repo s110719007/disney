@@ -59,7 +59,7 @@
 	{
 	top:100px;
 	width:80%;
-	height:410px;
+	height:350px;
 	position:absolute;
 	right:10%;
 	background-color:#E8CCFF;
@@ -135,30 +135,32 @@
 	height:285px;
 	}
 	@media only screen and (max-width: 1500px) {
-		.block3-2-1
-		{
-		position:relative;
-		top:470px;
-		left:10%;
-		width:80%;
-		height:210px;
-		background-color:#E8CCFF;
-		z-index:1;
-		}
+
 		#img{
 		float: right;
 		width:40%;
 		height:auto;
-		}
-		.block3-2-2
+		}		
+		.block3-2-1
 		{
 		position:relative;
 		top:500px;
 		left:10%;
 		width:80%;
-		height:610px;
+		height:auto;
 		background-color:#E8CCFF;
 		z-index:1;
+		}
+		.block3-2-2
+		{
+		position:relative;
+		top:500px;
+		left:25%;
+		width:80%;
+		height:auto;
+		background-color:#E8CCFF;
+		z-index:1;
+		color:#660077;
 		}
 		#block3
 		{
@@ -169,7 +171,7 @@
 		background: linear-gradient(to right,#CCBBFF,#9955FF);
 		position:absolute;
 		width:100%;
-		height:1400px;
+		height:auto;
 		z-index:1;
 		}
 	}
@@ -183,9 +185,9 @@
 .footer{
     display: flex;
     width: 100%;
-    height: 100px; 
+    height: 50%; 
     justify-content: center;
-    margin-top: 1410px;
+    margin-top: 40%;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -195,11 +197,11 @@
 	font-family: Arial;
 	font-size: 12px;
 	width: 100%;
-	height: 100px; 
+	height: 50%; 
 	color: #edf2c5;
 	padding-top: 23px;
 	padding-bottom: 23px;
-	margin-top: 80px;
+	margin-top: -10%;
 	margin-bottom: 0px;
 	margin-right: 0px;
 	margin-left: 0px;
@@ -221,25 +223,25 @@
 	<img id="lefticon" onclick="location.href='NEW.htm'" src="image/1106088.gif"></img>
 	<div class="blockspace"></div>
 	<div id="block3">
-		<div class="block3-1">
+		<div class="block3-1" style="height:auto;">
 			<img id="img" src="image/jasmine-png-25.png"></img>
-			<h1 style="font-family: Courier New; position:right;">&nbsp;&nbsp;Select your type of tickets : </h1>
+			<p style="max-width:80%;"><h1 style="font-family: Courier New; position:right;">&nbsp;&nbsp;Select your type of tickets : </h1>
 			<h3 style="font-family: Courier New;">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)&nbsp;Multi-day ticket<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;1 day ticket<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)&nbsp;Other option
 			</h3>
-		<h1 style="font-family: Courier New; position:right;"><br>&nbsp;&nbsp;Select your date of travel : </h1>
+			<h1 style="font-family: Courier New; position:right;"><br>&nbsp;&nbsp;Select your date of travel : </h1>
 			<h3 style="font-family: Courier New;">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_____________________<br>
-			<br><hr>
+			<br><hr></p>
 			<h4 style="font-family: Courier New; position:left;">&nbsp;&nbsp;&nbsp;&nbsp;You can pay by...<br>
 			<span>&nbsp;&nbsp;&nbsp;<img id="img" style="float:right;" src="image/payment.png"></img>
 		</div>
 		<div class="blankspace"></div>
-		<div class="block3-2-1" style="height:385px; top:490px;">
+		<div class="block3-2-1" style="height:auto; top:480px;">
 		<img id="img" style="float:left;" src="image/Aurora-PNG-Transparent.png"></img>
-		<span>
+		<p style="max-width:80%;"><span>
 		<h1 style="font-family: Courier New; position:right;">Disney Hotel Information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><hr></h1>
 		<h3 style="color:#444444">Why Disney World Hotel is Right for You?</h3><h3>
 			&nbsp;&nbsp;<li>Disney's Animal Kingdom Lodge.<br></li>
@@ -248,28 +250,31 @@
 			&nbsp;&nbsp;<li>Disney's All-Star Music Resort.<br></li>
 			&nbsp;&nbsp;<li>Disney's Pop Century Resort.<br></li>
 			&nbsp;&nbsp;<li>Disney's Grand Floridian Resort & Spa.</li></h3>
-		</span>
+		</span></p>
 		
 		</div>
 		<div class="blankspace"></div>
 		
-		<div class="block3-2-2" style="height:267px; top:475px;">
+		<div class="block3-2-2" style="height:auto; top:475px;">
 		<span>
-		<h1 style="font-family: Courier New; position:right;">&nbsp;&nbsp;Hotel & Ticket Deal<hr></h1>
+		<p style="max-width:40%;"><h1 style="font-family: Courier New; position:right;">&nbsp;&nbsp;Hotel & Ticket Deal<hr></h1>
 		<h3>&nbsp;&nbsp;&nbsp;&nbsp;-Save Up to 20% on Rooms at Select Disney Resort<br>&nbsp;&nbsp;&nbsp;Hotels This Holiday Season<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;-Give the Gift of a Magical Stay at Disney Resort <br>&nbsp;&nbsp;&nbsp;Hotel, Save Up to 25% on Rooms in Early 2020<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;-Florida Residents – Save Up to 40% on Disney<br>&nbsp;&nbsp;&nbsp;Theme Park Tickets!<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;-The Ultimate Disney Christmas Package
-		</h3>
+		</h3></p>
 		</span>
-			<img id="img" src="image/5c798af26426caa42ea1535acc55a5c7-godmother-all.png"></img>
+			
 		</div>
 		<div class="blankspace"></div>
-	</div>
-<footer class="footer">
+<div class="blankspace"></div><div class="blankspace"></div><div class="blankspace"></div><div class="blankspace"></div>
+<img id="img" style="width:25%; height:auto;" src="image/5c798af26426caa42ea1535acc55a5c7-godmother-all.png"></img>
+
+	<footer class="footer">
 	<p style="font-family: Courier New;>+12 3 45 67 89</p>
         <p style="font-family: Courier New;><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any questions about all available products or offers?<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please call our advisers at: +12 3 45 67 89<br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© Disney • Pixar © & TM Lucasfilm Ltd. © MARVEL. All Rights Reserved</p>
     </footer>
+</div>
 </body>	
